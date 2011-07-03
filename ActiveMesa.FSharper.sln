@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ActiveMesa.FSharper.Psi.FSharp", "ActiveMesa.FSharper.Psi.FSharp\ActiveMesa.FSharper.Psi.FSharp.fsproj", "{DB231B9D-85CA-4B05-890D-2BF1A44CB488}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ActiveMesa.FSharper.ProjectModel", "ActiveMesa.FSharper.ProjectModel\ActiveMesa.FSharper.ProjectModel.fsproj", "{4AF78BE3-F25A-4881-A890-C750183FB8AE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ActiveMesa.FSharper.Intentions.FSharp", "ActiveMesa.FSharper.Intentions.FSharp\ActiveMesa.FSharper.Intentions.FSharp.fsproj", "{F5F202D9-0902-4C2F-A9CD-47DE8708CFEC}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ActiveMesa.FSharper.LiveTemplates.FSharp", "ActiveMesa.FSharper.LiveTemplates.FSharp\ActiveMesa.FSharper.LiveTemplates.FSharp.fsproj", "{B4BB10D8-80D2-4B34-B89E-AA697B343167}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ActiveMesa.FSharper.Daemon.FSharp", "ActiveMesa.FSharper.Daemon.FSharp\ActiveMesa.FSharper.Daemon.FSharp.fsproj", "{8EE25F9D-184B-4FB3-9DCA-3C7A54C51499}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ActiveMesa.FSharper.Feature.Services.FSharp", "ActiveMesa.FSharper.Feature.Services.FSharp\ActiveMesa.FSharper.Feature.Services.FSharp.fsproj", "{B200D1E5-DC19-4DD2-BF40-B0703391AABB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{06E60C3D-1AE0-4A6E-9669-B6B3AFAA87E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveMesa.FSharp.Tests.CompilerExperiments", "ActiveMesa.FSharp.Tests.CompilerExperiments\ActiveMesa.FSharp.Tests.CompilerExperiments.csproj", "{A7B792B9-AFFA-4AE6-A61F-068FA8E8F980}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E128AAD-6BC2-4202-84AA-9455F28852A4}"
+	ProjectSection(SolutionItems) = preProject
+		ActiveMesa.FSharper.vsmdi = ActiveMesa.FSharper.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ActiveMesa.FSharper.Common", "ActiveMesa.FSharper.Common\ActiveMesa.FSharper.Common.fsproj", "{E44FF0B0-896D-41E9-B892-25421DB0E203}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ActiveMesa.FSharper.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB231B9D-85CA-4B05-890D-2BF1A44CB488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB231B9D-85CA-4B05-890D-2BF1A44CB488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB231B9D-85CA-4B05-890D-2BF1A44CB488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB231B9D-85CA-4B05-890D-2BF1A44CB488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF78BE3-F25A-4881-A890-C750183FB8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF78BE3-F25A-4881-A890-C750183FB8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF78BE3-F25A-4881-A890-C750183FB8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF78BE3-F25A-4881-A890-C750183FB8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F202D9-0902-4C2F-A9CD-47DE8708CFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F202D9-0902-4C2F-A9CD-47DE8708CFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F202D9-0902-4C2F-A9CD-47DE8708CFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F202D9-0902-4C2F-A9CD-47DE8708CFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BB10D8-80D2-4B34-B89E-AA697B343167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BB10D8-80D2-4B34-B89E-AA697B343167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BB10D8-80D2-4B34-B89E-AA697B343167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BB10D8-80D2-4B34-B89E-AA697B343167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE25F9D-184B-4FB3-9DCA-3C7A54C51499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE25F9D-184B-4FB3-9DCA-3C7A54C51499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE25F9D-184B-4FB3-9DCA-3C7A54C51499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE25F9D-184B-4FB3-9DCA-3C7A54C51499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B200D1E5-DC19-4DD2-BF40-B0703391AABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B200D1E5-DC19-4DD2-BF40-B0703391AABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B200D1E5-DC19-4DD2-BF40-B0703391AABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B200D1E5-DC19-4DD2-BF40-B0703391AABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B792B9-AFFA-4AE6-A61F-068FA8E8F980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B792B9-AFFA-4AE6-A61F-068FA8E8F980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B792B9-AFFA-4AE6-A61F-068FA8E8F980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B792B9-AFFA-4AE6-A61F-068FA8E8F980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E44FF0B0-896D-41E9-B892-25421DB0E203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44FF0B0-896D-41E9-B892-25421DB0E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44FF0B0-896D-41E9-B892-25421DB0E203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44FF0B0-896D-41E9-B892-25421DB0E203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7B792B9-AFFA-4AE6-A61F-068FA8E8F980} = {06E60C3D-1AE0-4A6E-9669-B6B3AFAA87E4}
+		{2E128AAD-6BC2-4202-84AA-9455F28852A4} = {06E60C3D-1AE0-4A6E-9669-B6B3AFAA87E4}
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = 
+	EndGlobalSection
+EndGlobal

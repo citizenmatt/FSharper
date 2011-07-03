@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{db231b9d-85ca-4b05-890d-2bf1a44cb488}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ActiveMesa.FSharper.Psi.FSharp</RootNamespace>
+    <AssemblyName>ActiveMesa.FSharper.Psi.FSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Name>ActiveMesa.FSharper.Psi.FSharp</Name>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\ActiveMesa.FSharper.Psi.FSharp.XML</DocumentationFile>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe</StartProgram>
+    <StartArguments>/ReSharper.Plugin "C:\My Dropbox\Projects\Commercial\ActiveMesa.FSharper\ActiveMesa.FSharper.Common\bin\Debug" /ReSharper.Internal</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Release\ActiveMesa.FSharper.Psi.FSharp.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ActiveMesa.FSharper.Common\GlobalAssemblyInfo.fs">
+      <Link>GlobalAssemblyInfo.fs</Link>
+    </Compile>
+    <Compile Include="FSharpLanguage.fs" />
+    <Compile Include="FSharpLanguageService.fs" />
+    <Compile Include="FSharpProjectFileType.fs" />
+    <Compile Include="Impl\FSharpProjectFileLanguageService.fs" />
+    <Compile Include="Tree\IFSharpTypeDeclaration.fs" />
+    <Compile Include="Tree\IClassLikeDeclaration.fs" />
+    <Compile Include="Tree\IClassDeclaration.fs" />
+    <Compile Include="Tree\IFSharpTreeNode.fs" />
+    <Compile Include="Tree\IFSharpTypeAndNamespaceHolderDeclaration.fs" />
+    <Compile Include="Tree\IFSharpFile.fs" />
+    <Compile Include="Tree\IBlock.fs" />
+    <Compile Include="Tree\IFSharpExpression.fs" />
+    <Compile Include="Tree\IFSharpStatement.fs" />
+    <Compile Include="Parsing\IFSharpParser.fs" />
+    <Compile Include="Parsing\FSharpLexer.fs" />
+    <Compile Include="FSharpLanguageServiceImpl.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActiveMesa.FSharper.ProjectModel\ActiveMesa.FSharper.ProjectModel.fsproj">
+      <Name>ActiveMesa.FSharper.ProjectModel</Name>
+      <Project>{4af78be3-f25a-4881-a890-c750183fb8ae}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(ProjectDir)..\Plugin.Targets" />
+</Project>
